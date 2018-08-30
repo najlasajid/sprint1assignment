@@ -1,0 +1,25 @@
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+     function change(){
+     	var wish=document.getElementById('wishes');
+     	var fname=document.getElementById('txt_fname').value;
+     	var lname=document.getElementById("txt_lname").value;
+     	var email=document.getElementById("txt_email").value;
+     	wish.innerHTML="Welcome "+fname+" "+lname+" , My Email Id is "+email;
+     }
+	</script>
+</head>
+<body>
+<form>
+	First Name : <input type="text" id="txt_fname"><br>
+	Last Name : <input type="text" id="txt_lname"><br>
+	Email Id : <input type="text" id="txt_email"><br>
+	Password : <input type="password" id="txt_pwd"><br>
+	<input type="button" value="SignUp" onclick="change();">
+	<br><br>
+	<p id="wishes"></p>
+</form>
+</body>
+</html>
